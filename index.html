@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Assigment 1</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="flex-wrapper">
+      <div class="logo-text-wrapper">
+        <img src="./Logo.svg" alt="Logo" class="logo-img" />
+        <div class="hero-text">
+          <h2 class="header">For Individuals</h2>
+          <p class="hero-message">
+            Start benefiting from the wellness experience. For companies looking
+            on increasing productivity, and improving organization wellness.
+          </p>
+          <p class="mobile-hero-message">
+            Inspiring wholesome harmony for the mind, body and spirit, for
+            everyone, everywhere.
+          </p>
+        </div>
+      </div>
+
+      <form class="form-container">
+        <div class="input-wrapper">
+          <div class="label-input">
+            <label for="firstName" class="label">First Name</label>
+            <input type="text" id="firstName" class="item-input" />
+          </div>
+
+          <div class="label-input">
+            <label for="lastName" class="label">Last Name</label>
+            <input type="text" id="lastName" class="item-input" />
+          </div>
+        </div>
+
+        <div class="input-wrapper">
+          <div class="label-input">
+            <label for="gender" class="label">Gender</label>
+            <select id="gender" class="item-input">
+              <option value="" disabled selected>Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+
+          <div class="label-input">
+            <label for="dob" class="label">Date of Birth</label>
+            <input type="date" id="dob" class="item-input" />
+          </div>
+        </div>
+
+        <div class="input-wrapper">
+          <div class="label-input">
+            <label for="weight" class="label">Weight (KG)</label>
+            <input
+              type="number"
+              id="weight"
+              class="item-input"
+              placeholder="Enter Weight"
+            />
+          </div>
+
+          <div class="label-input">
+            <label for="height" class="label">Height (CM)</label>
+            <input
+              type="number"
+              id="height"
+              class="item-input"
+              placeholder="Enter height here..."
+            />
+          </div>
+        </div>
+
+        <div clas="single-input-wrapper">
+          <div class="label-input">
+            <label for="activityLevel" class="label">Activity Level</label>
+            <select type="text" label="activityLevel" class="single-item-input">
+              <option value="" disabled selected>Select here</option>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+        </div>
+
+        <div clas="single-input-wrapper">
+          <div class="label-input password-wrapper">
+            <label for="password" class="label">Password</label>
+            <div class="input-container">
+              <input
+                type="password"
+                id="password"
+                class="single-item-input password-input"
+              />
+              <span
+                class="password-toggle"
+                onclick="togglePasswordVisibility()"
+              >
+                <img src="./show.svg" alt="" />
+              </span>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <p class="register-notice">
+          By clicking Register, you agree to our
+          <a href="#" class="link">Terms of Use</a> and our
+          <a href="#" class="link">Privacy Policy</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

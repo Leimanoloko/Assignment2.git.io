@@ -1,0 +1,230 @@
+/*
+- CSS RESETs
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+
+/*
+    5. Improve media defaults
+  */
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+* {
+  margin: 0;
+  background-color: 2EC4B6;
+}
+
+body {
+  line-height: 1.5;
+  background-color: #f7fdfc;
+  -webkit-font-smoothing: antialiased sofiapro;
+}
+
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 80px 140px;
+  height: 100vh;
+}
+
+.logo-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.logo-img {
+  align-self: flex-start;
+  width: 77.3px;
+  height: 80px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.header {
+  color: #000b0a;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px; /* 125% */
+  letter-spacing: -0.8px;
+  align-self: flex-start;
+}
+
+.hero-message {
+  display: block;
+  color: #737373;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  width: 460px;
+}
+
+.mobile-hero-message {
+  display: none;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  background-color: #ffffff;
+  width: 586px;
+  box-shadow: 0px 4px 50px rgba(4, 8, 19, 10%);
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 23px;
+}
+
+.label-input {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.label {
+  align-self: flex-start;
+  color: #011c34;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+input,
+select {
+  align-self: flex-start;
+  width: 100%;
+  height: 48px;
+  padding: 14px 14px;
+  border: 1px solid #f0f0f0;
+}
+
+input:hover,
+select:hover {
+  border: 1px solid #2dc4b6;
+}
+
+.password-input {
+  padding-right: 30px;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #2dc4b6;
+  color: #ffffff;
+  border: none;
+  height: 48px;
+}
+
+.register-notice {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+}
+
+.link {
+  text-decoration: underline;
+  color: #2dc4b6;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 20px 24px 64px 24px;
+  }
+
+  .flex-wrapper {
+    flex-direction: column;
+  }
+
+  .logo-img {
+    width: 38.667px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+}
